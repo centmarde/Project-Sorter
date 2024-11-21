@@ -1,0 +1,94 @@
+#indexbody2 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: rgb(240, 240, 240); */
+    /* background-image: url("https://www.bhmpics.com/downloads/android-wallpaper-gif/8.r0cwpwi.gif"); */
+    background: linear-gradient(#2b1055, #7597de);
+    min-height: 100vh;
+
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#backArrow {
+    color: #2b1055;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+section img#moon {
+    mix-blend-mode: screen;
+    z-index: 1;
+
+}
+
+section img#mountains_behind {
+    z-index: 9;
+}
+
+section img#last {
+    z-index: 2;
+}
+
+section img#mountains_front {
+    z-index: 10;
+}
+
+section img#firstLayer {
+    z-index: 11;
+}
+
+#margin {
+    height: 500px;
+}
+
+section::before {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+
+}
+
+#texth2 {
+    position: absolute;
+    justify-content: center;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 50px;
+    z-index: 9;
+    font-family: "Raleway", sans-serif;
+}
+
+#sec {
+    position: relative;
+    padding: 20px;
+    background: #1c0522;
+    color: white;
+
+}
